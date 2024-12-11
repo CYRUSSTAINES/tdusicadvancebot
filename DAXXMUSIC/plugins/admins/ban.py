@@ -70,7 +70,7 @@ async def unban_user(user_id, first_name, admin_id, admin_name, chat_id):
     try:
         await app.unban_chat_member(chat_id, user_id)
     except ChatAdminRequired:
-        msg_text = "Ban rights? Nah, I'm just here for the digital high-fives 🙌\nGive me ban rights! 😡🥺"
+        msg_text = "ban ?? enku ban  rights ila inga  🙌\nGive me ban rights! 🤧🪇"
         return msg_text
     except Exception as e:
         msg_text = f"opps!!\n{e}"
@@ -95,11 +95,11 @@ async def mute_user(user_id, first_name, admin_id, admin_name, chat_id, reason, 
         msg_text = "Mute rights? Nah, I'm just here for the digital high-fives 🙌\nGive me mute rights! 😡🥺"
         return msg_text, False
     except UserAdminInvalid:
-        msg_text = "I wont mute an admin bruh!!"
+        msg_text = "avan itha grup admin epdi panava !"
         return msg_text, False
     except Exception as e:
         if user_id == 6664582540:
-            msg_text = "why should i mute myself? sorry but I'm not stupid like you"
+            msg_text = "na lusa en Mute pana 🥴"
             return msg_text, False
         
         msg_text = f"opps!!\n{e}"
@@ -133,7 +133,7 @@ async def unmute_user(user_id, first_name, admin_id, admin_name, chat_id):
             )
         )
     except ChatAdminRequired:
-        msg_text = "Mute rights? Nah, I'm just here for the digital high-fives 🙌\nGive me unmute rights! 😡🥺"
+        msg_text = "Mute rights? inga Rigts tharvala 🙌\nGive me unmute rights! 😡🥺"
         return msg_text
     except Exception as e:
         msg_text = f"opps!!\n{e}"
