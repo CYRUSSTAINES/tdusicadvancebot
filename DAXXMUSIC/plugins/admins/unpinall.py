@@ -27,10 +27,10 @@ async def unpin_callbacc(client, CallbackQuery):
         if member.privileges.can_pin_messages:
             pass
         else:
-            await CallbackQuery.answer("You dont have rights, baka!", show_alert=True)
+            await CallbackQuery.answer("You dont have rights 😏", show_alert=True)
             return
     else:
-        await CallbackQuery.answer("You dont have rights, baka!", show_alert=True)
+        await CallbackQuery.answer("You dont have rights, Kolathai !", show_alert=True)
         return
     
     msg_id = CallbackQuery.data.split("=")[1]
